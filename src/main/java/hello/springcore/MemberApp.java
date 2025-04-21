@@ -17,6 +17,6 @@ public class MemberApp {
         System.out.println("new Member = " + member.getName());
         System.out.println("find Member = " + findMember.getName());
         // 이렇게 애플레키에션을 매번 띄워서 눈으로 확인하는건 어렵다.
-        // Test 패키지에 별도로 테스트를 구현하는것이 옳다.
+        // Junit을 사용해 Test 패키지에 별도로 테스트를 구현하는것이 옳다.
     }
 }
