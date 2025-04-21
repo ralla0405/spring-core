@@ -1,6 +1,5 @@
-package hello.springcore;
+package hello.springcore.withoutspring;
 
-import hello.springcore.withoutspring.AppConfig;
 import hello.springcore.withoutspring.member.Grade;
 import hello.springcore.withoutspring.member.Member;
 import hello.springcore.withoutspring.member.MemberService;
