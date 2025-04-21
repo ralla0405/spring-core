@@ -1,14 +1,16 @@
 package hello.springcore;
 
+import hello.springcore.withoutspring.AppConfig;
 import hello.springcore.withoutspring.member.Grade;
 import hello.springcore.withoutspring.member.Member;
 import hello.springcore.withoutspring.member.MemberService;
-import hello.springcore.withoutspring.member.MemberServiceImpl;
 
 public class MemberApp {
 
     public static void main(String[] args) {
-        MemberService memberService = new MemberServiceImpl();
+        AppConfig appConfig = new AppConfig();
+        MemberService memberService = appConfig.memberService();
+
         Member member = new Member(1L, "memberA", Grade.VIP);
         memberService.join(member);
 
